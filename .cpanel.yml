@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/danielma/expenses.danielmaroc.com/
+    - export DEPLOYPATH=/home/danielma/public_html/
     - /bin/cp -R * $DEPLOYPATH
