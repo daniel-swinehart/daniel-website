@@ -123,6 +123,18 @@ body {
   height: auto;
  }
 
+ .email-form {
+  display: block;
+  padding: 50px,50px,50px,50px;
+}
+
+ .form-row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 5px;
+}
+
 .footer {
    position: fixed;
    bottom: 0;

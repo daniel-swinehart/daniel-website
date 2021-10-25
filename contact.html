@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='en'>
+   <head>
+      <meta charset='UTF-8'/>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+      <title>danielmaroc</title>
+      <link rel='stylesheet' href='stylesHome.css'/>
+   </head>
+
+   <body>
+      <div class='page'>
+         <header class='header'>
+            <nav class='top-menu'>
+               <div class='menu-btn' onclick='openNav()'>
+                  <div class="menu-bar1"></div>
+                  <div class="menu-bar2"></div>
+                  <div class="menu-bar3"></div>
+               </div>
+               <div id='top-menu-drop' class='drop-down-content'>
+                  <a href='javascript:void(0)' class='closebtn' onclick='closeNav()'>&times;</a>
+                  <ul class='nav-menu-std'>
+                     <li><a href='home.html'>Home</a></li> 
+                     <li><a href='#'>Vision</a></li>
+                     <li><a href='#'>Locations</a></li>    
+                  </ul>
+               </div>   
+            </nav>
+         </header>
+
+         <form action='email-submit.php' method='post' class='email-form'>
+            <div class='form-row'>
+               <label for='email-first-name'>First Name:
+                  <input id='email-first-name' name='email-first-name' type='text' required/>
+               </label>
+            </div>
+            <div class='form-row'>
+               <label for='email-last-name'>Last Name:
+                  <input id='email-last-name' name='email-last-name' type='text' required/>
+               </label>
+            </div>
+            <div class='form-row'>
+               <label for='email-address'>Email Address:
+                  <input id='email-address' name='email-address' type='text' required/>
+               </label>
+            </div>
+            <div class='form-row'>
+               <label for='email-message'>Message:
+                  <textarea id='email-message' name='email-message' type='text' required></textarea>
+               </label>
+            </div>
+            <div class='form-row'>
+               <button type='submit' id='send-email-btn' name='send-email-btn' value='Send'>Submit</button>
+            </div>   
+         </form>
+
+         <footer class='footer'>
+            <p class='main-footer-p'>&copy; 2020 danielmaroc.com</p>
+         </footer>
+      </div>
+      <script type='text/javascript' src='js/maroc.js'></script>
+   </body>
+</html>
