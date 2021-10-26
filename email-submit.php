@@ -6,7 +6,8 @@ if ((!$_POST['email-first-name']) || (!$_POST['email-last-name']) || (!$_POST['e
    header("Location: contact.html");
    exit;
 }
-if (!filter_var(($_POST['email-message']), FILTER_VALIDATE_EMAIL)) {
+$email = $_POST['email-address'];
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     header("Location: contact.html");
     exit;
 } else {
@@ -25,8 +26,6 @@ if (!filter_var(($_POST['email-message']), FILTER_VALIDATE_EMAIL)) {
     mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
     
     header('Location: contact-thank-you.html');
-
-
 }
 ob_flush();
 ?>
