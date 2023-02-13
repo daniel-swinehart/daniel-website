@@ -17,7 +17,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     $last_name = $_POST['email-last-name'];
     $subject = "Form submission";
     $subject2 = "Copy of your form submission";
-    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['email-message'];
     $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['email-message'];
 
     $headers = "From:" . $from;
