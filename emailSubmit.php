@@ -3,12 +3,12 @@ ob_start();
 
 //Check for the required fields from 'email-form' on contact.html
 if ((!$_POST['email-first-name']) || (!$_POST['email-last-name']) || (!$_POST['email-address']) || (!$_POST['email-message'])) {
-   header("Location: testcontact.html");
+   header("Location: contact.html");
    exit;
 }
 $email = $_POST['email-address'];
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    header("Location: testcontact.html");
+    header("Location: contact.html");
     exit;
 } else {
     $to = "d4570s@gmail.com"; // this is your Email address
@@ -25,7 +25,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     mail($to,$subject,$message,$headers);
     mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
     
-    header('Location: testThankyou.html');
+    header('Location: thankyou.html');
 }
 ob_flush();
 ?>
