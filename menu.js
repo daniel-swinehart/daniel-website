@@ -1,5 +1,5 @@
 function openNav() {
-  document.getElementById('top-menu-drop').style.width = "200px";
+  document.getElementById('top-menu-drop').style.width = "160px";
   document.getElementById('menu-btn1').style.display = 'none';
 }
 
