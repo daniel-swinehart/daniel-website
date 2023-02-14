@@ -156,6 +156,15 @@ a:active {
    padding: 25px;
 }
 
+.section-text-center {
+  display: block;
+  width: 75%;
+  height: 100%;
+  background-color: rgba(1,22,39,0.75);
+  text-align: center;
+  padding: 25px;
+}
+
 .form-center {
     display: flex;
     flex-direction: column;
